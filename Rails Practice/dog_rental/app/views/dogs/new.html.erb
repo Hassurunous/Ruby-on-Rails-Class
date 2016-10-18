@@ -1,0 +1,50 @@
+<style media="screen">
+body {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+.formField {
+    background-color: #888;
+    text-align: center;
+}
+.field {
+    font-size: 2em;
+    color: white;
+}
+.label {
+    text-align: left;
+    display: inline;
+}
+.textField {
+    display: inline;
+    text-align: right;
+}
+</style>
+<div class="formField">
+<%= form_for(@dog) do |f| %>
+  <div class="field">
+    <label class="label"><%= f.label :name %>:</label>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <div class="label"><%= f.label :breed %>:</div>
+    <div class="textField"><%= f.text_field :breed %></div>
+  </div>
+
+  <div class="field">
+    <div class="label"><%= f.label :fav_park %>:</div>
+    <div class="textField"><%= f.text_field :fav_park %></div>
+  </div>
+
+  <div class="field">
+    <div class="label"><%= f.label :rate %>:</div>
+    <div class="textField"><%= f.text_field :rate %></div>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+</div>

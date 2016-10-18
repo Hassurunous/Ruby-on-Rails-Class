@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @apartment.address %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @apartment.description %>
+</p>
+
+<p>
+  <strong>Photo:</strong>
+  <!--<%= @apartment.photo_url %>-->
+  <%= image_tag @apartment.photo_url, {height: 300} %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @apartment.price %>
+</p>
+
+<%= link_to 'Edit', edit_apartment_path(@apartment) %> |
+<%= link_to 'Back', apartments_path %>

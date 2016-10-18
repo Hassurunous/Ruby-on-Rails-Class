@@ -1,0 +1,17 @@
+<h1>Dogs#index</h1>
+<p>Find me in app/views/dogs/index.html.erb</p>
+
+<h2>Dogs for Rent</h2>
+<ul>
+  <% @dogs.each do |p| %>
+    <li>
+      <%= p.name %> - <%= p.fav_park %> - <%= p.breed %> - <%= p.rate %>
+    </li>
+  <% end %>
+</ul>
+
+<button type="button" name="newDog">New Dog</button>
+<script type="text/javascript">
+    var newBtn = document.getElementById('newDog');
+    document.addEventListener('click', function() {window.location.replace("dogs/new")});
+</script>

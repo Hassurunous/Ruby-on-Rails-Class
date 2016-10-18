@@ -1,0 +1,21 @@
+-Automated Testing
+    -tests run programatically
+        -Unit tests
+        -Integration tests
+        -System tests
+
+    -code coverage
+        -Percentage of the codebase that is covered by the automated tests
+        -Increasing Code Coverage
+            -Add more tests
+            -Delete lines of code
+            
+    -Reasons for Testing
+        -Best form of documentation
+        -Freedom to refactor
+        -Collaboration in large teams
+
+    -continuous integration
+
+-Test Driven Development
+    -"Writing the tests before you begin"
