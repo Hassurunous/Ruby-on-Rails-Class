@@ -5,3 +5,18 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+user = User.new
+
+if Rails.env == "staging"
+    user.name = "Staging Name"
+    user.save
+elsif Rails.env == "production"
+    user.name = "Production Name"
+    user.save
+elsif Rails.env == "development"
+    user.name = "Development Name"
+    user.save
+else
+    puts "Error. Development environment didn't match any of the conditions."
+end

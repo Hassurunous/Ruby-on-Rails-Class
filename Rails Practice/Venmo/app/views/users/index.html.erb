@@ -1,2 +1,10 @@
 <h1>Users#index</h1>
 <p>Find me in app/views/users/index.html.erb</p>
+<h2>List of All Users and User Data made with 'for each' loop</h2>
+<ul>
+  <% @users.each do |u| %>
+    <li>
+      <%= u.name %> - <%= u.email %> - <%= u.handle %> - <%= u.balance %>
+    </li>
+  <% end %>
+</ul>
